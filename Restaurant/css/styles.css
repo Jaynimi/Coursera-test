@@ -14,9 +14,10 @@ body {
 
 #logo-img {
 	background: url('../images/logo4.png') no-repeat;
-	width: 165px;
-	height: 160px;
+	width: 150px;
+	height: 150px;
 	margin: 10px 15px 10px 0;
+	background-size: contain;
 }
 
 .navbar-brand {
@@ -98,10 +99,11 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* Header */
 	#logo-img {
-		background: url('../images/soup2.jpeg') no-repeat;
+		background: url('../images/logo4.png') no-repeat;
 		width: 100px;
 		height: 100px;
 		margin: 5px 5px 5px 0;
+		background-size: contain;
 	}
 
 }
@@ -113,8 +115,37 @@ body {
 
 /* Extra small devices only */
 @media (max-width: 767px) {
+	
 	/* Header */
 	.navbar-brand {
-		padding-top: 
+		padding-top: 10px;
+		height: 80px;
 	}
+
+	/* Restaurant name */
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw;  /* 1vw = 1% of viewport width */
+	}
+
+	/* Kosher Certified */
+	.navbar-brand p {
+		font-size: .6em;
+		margin-top: 12px;
+	}  
+
+	/* Star-K */
+	.navbar-brand p img {
+		height: 20px;
+	}
+
+	/* Collapsed nav menu glyph */
+    #collapsable-nav a {
+    	font-size: 1.2em;
+    }
+
+    #collapsable-nav a span {
+    	font-size: 1em;
+    	margin-right: 5px;
+    }
 }
