@@ -90,18 +90,42 @@ body {
 	margin-top: -30px;
 }
 
-/****    Large devices only ***/
-@media (min-width: 1200px) {
-	.jumbotron {
-		background: url('../images/jumbotron_1200.jpg') no-repeat;
-		height: 675px;
+/* Home Page */ -
+.container .jumbotron {
 		box-shadow: 0 0 50px #3f0c1f;
 		border: 2px solid #3f0c1f;
+
+}
+
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+	background: url('../images/menu-tile.jpg') no-repeat;
+}
+
+/****    Large devices only ***/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+		background: url('../images/jumbotron_1200.jpg') no-repeat;
+		height: 675px;
 	}
 }
 
 /* Medium devices only */
 @media (min-width: 992px) and (max-width: 1199px) {
+
 	/* Header */
 	#logo-img {
 		background: url('../images/restaurant-logo_large.png') no-repeat;
@@ -111,12 +135,25 @@ body {
 		background-size: contain;
 	}
 
+	/* Home Page */
+	.container .jumbotron {
+		background: url('../images/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+		box-shadow: 0 0 50px #3f0c1f;
+		border: 2px solid #3f0c1f;
+	}
 }
+
 
 /* Small devices only */
 @media (min-width: 768px) and (max-width: 991px) {
 
-}																																																																																																																																																																																																																																																																																																																															
+	/* Home Page */
+	.container .jumbotron {
+		background: url('../images/jumbotron_768.jpg') no-repeat;
+		height: 432px;
+	}
+}																			
 
 /* Extra small devices only */
 @media (max-width: 767px) {
@@ -144,13 +181,36 @@ body {
 		height: 20px;
 	}
 
-	/* Collapsed nav menu glyph */
+	/* Collapsed nav menu text */
     #collapsable-nav a {
     	font-size: 1.2em;
     }
 
+	/* Collapsed nav menu glyph */
     #collapsable-nav a span {
     	font-size: 1em;
     	margin-right: 5px;
+    }
+
+    #call-btn > a {
+    	font-size: 1.5em;
+    	display: block;
+    	margin: 0 20px;
+    	padding: 10px;
+    	border: 2px solid #fff;
+    	background-color: #f6b319;
+    	color: #951C49;
+    }
+    #xs-deliver {
+    	margin-top: 5px;
+    	font-size: .7em;
+    	letter-spacing: .1em;
+    	text-transform: uppercase;
+    }
+
+    /* Home Page */
+    .container .jumbotron {
+    	margin-top: 30px;
+    	padding: 0;
     }
 }
